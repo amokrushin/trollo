@@ -1,0 +1,43 @@
+version: '3.1'
+services:
+  nginx:
+    build: ./modules/nginx
+    volumes:
+      - ./modules/web-client/public:/var/www/static/web-client
+
+  boards-api:
+    build:
+      context: ./modules/nodemon
+      args:
+        NODE_VERSION: ${NODE_VERSION}
+    environment:
+        NODE_ENV: development
+    command: [nodemon, --trace-warnings, server.js]
+    volumes:
+      - ./modules/boards-api:/app
+
+  boards-db:
+    build: ./modules/boards-db
+
+  sshd:
+    build: ./modules/sshd
+
+  web-client:
+    env_file:
+      - ./env/common.env
+      - ./env/wds.env
+    networks:
+      - front-tier
+      - back-tier
+    restart: unless-stopped
+    expose:
+      - "80"
+    ports:
+      - "8180:80"
+    build:
+      context: ./modules/nodemon
+      args:
+        NODE_VERSION: ${NODE_VERSION}
+    command: [nodemon, --watch, webpack.config.js, --watch, package.json, --exec, 'npm run wds']
+    volumes:
+      - ./modules/web-client:/app
