@@ -1,0 +1,25 @@
+[
+  {
+    "id": "4bc417e6-8037-4b41-a548-8fd66d7a1b69",
+    "name": "Lorem ipsum",
+    "organization": {
+      "id": "6186cfca-2e82-4a60-b9ad-227102c652f0"
+    },
+    "lists": [
+      {
+        "id": "f6e01190-c020-4403-84bc-99110c133645"
+      },
+      {
+        "id": "79fbad3a-6ba5-474c-9301-d48e874f9953"
+      }
+    ]
+  },
+  {
+    "id": "5ecd2db3-6251-4690-89d2-766800210cc1",
+    "name": "Quisque est ex",
+    "organization": {
+      "id": "23c792ef-1177-4b2c-957e-f78b924e0fb6"
+    },
+    "lists": []
+  }
+]

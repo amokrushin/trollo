@@ -1,0 +1,32 @@
+[
+  {
+    "id": "249de12c-5c13-4d18-936b-7b8824ebc3a4",
+    "organization": {
+      "id": "6186cfca-2e82-4a60-b9ad-227102c652f0"
+    },
+    "user": {
+      "id": "a6fbbb00-b0b5-4658-a1c2-e0e5830b7804"
+    },
+    "role": "admin"
+  },
+  {
+    "id": "b665c11d-25b4-4d52-937a-e8501381a531",
+    "organization": {
+      "id": "6186cfca-2e82-4a60-b9ad-227102c652f0"
+    },
+    "user": {
+      "id": "55d247b7-2872-446d-afd8-7f9143bbcc43"
+    },
+    "role": "normal"
+  },
+  {
+    "id": "0a87c68d-f600-4fdd-b80b-9b3c6f972ec9",
+    "organization": {
+      "id": "23c792ef-1177-4b2c-957e-f78b924e0fb6"
+    },
+    "user": {
+      "id": "a6fbbb00-b0b5-4658-a1c2-e0e5830b7804"
+    },
+    "role": "admin"
+  }
+]
