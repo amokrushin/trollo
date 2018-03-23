@@ -1,0 +1,36 @@
+.dropdown {
+    display  : inline-block;
+    position : static !important;
+}
+
+.menu {
+    max-width : 20rem;
+    min-width : 10rem;
+    left      : auto !important;
+    right     : 0.2rem !important;
+    padding   : 0;
+}
+
+.list {
+    composes : list-group list-group-flush from "../styles/bootstrap.scss";
+}
+
+.list-heading {
+    composes   : list-group-item h6 text-muted from "../styles/bootstrap.scss";
+    text-align : center;
+}
+
+.item {
+    composes : list-group-item list-group-item-action from "../styles/bootstrap.scss";
+}
+
+.item-name {
+    composes  : h6 from "../styles/bootstrap.scss";
+    font-size : 0.9rem;
+}
+
+.item-subname {
+    composes    : text-muted from "../styles/bootstrap.scss";
+    white-space : normal;
+    font-size   : 80%;
+}

@@ -1,0 +1,93 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+.btn-transparent-inverted {
+    $color : white;
+    $color-hover : white;
+    $border : transparent;
+    $focus-background : rgba(black, 0.2);
+    $focus-border : transparent;
+    $active-background : rgba(black, 0.4);
+    $active-border : transparent;
+    $btn-focus-width : 0;
+
+    color            : $color;
+    background-color : transparent;
+    background-image : none;
+    border-color     : $border;
+
+    @include hover {
+        color            : $color-hover;
+        background-color : $focus-background;
+        border-color     : $focus-border;
+    }
+
+    &.disabled,
+    &:disabled {
+        color            : $color;
+        background-color : transparent;
+    }
+
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active,
+    .show > &.dropdown-toggle {
+        color            : color-yiq($active-background);
+        background-color : $active-background;
+        border-color     : $active-border;
+
+        &:focus {
+            // Avoid using mixin so we can pass custom focus shadow properly
+            @if $enable-shadows and $btn-active-box-shadow != none {
+                box-shadow : $btn-active-box-shadow, 0 0 0 $btn-focus-width rgba($color, .5);
+            } @else {
+                box-shadow : 0 0 0 $btn-focus-width rgba($color, .5);
+            }
+        }
+    }
+}
+
+.btn-transparent {
+    $color : #111;
+    $color-hover : #111;
+    $border : transparent;
+    $focus-background : rgba(black, 0.2);
+    $focus-border : transparent;
+    $active-background : rgba(black, 0.4);
+    $active-border : transparent;
+    $btn-focus-width : 0;
+
+    color            : $color;
+    background-color : transparent;
+    background-image : none;
+    border-color     : $border;
+
+    @include hover {
+        color            : $color-hover;
+        background-color : $focus-background;
+        border-color     : $focus-border;
+    }
+
+    &.disabled,
+    &:disabled {
+        color            : $color;
+        background-color : transparent;
+    }
+
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active,
+    .show > &.dropdown-toggle {
+        color            : color-yiq($active-background);
+        background-color : $active-background;
+        border-color     : $active-border;
+
+        &:focus {
+            // Avoid using mixin so we can pass custom focus shadow properly
+            @if $enable-shadows and $btn-active-box-shadow != none {
+                box-shadow : $btn-active-box-shadow, 0 0 0 $btn-focus-width rgba($color, .5);
+            } @else {
+                box-shadow : 0 0 0 $btn-focus-width rgba($color, .5);
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.list {
+    composes : list-group list-group-flush from "../styles/bootstrap.scss";
+}
+
+.list-heading {
+    composes   : list-group-item h6 text-muted from "../styles/bootstrap.scss";
+    text-align : center;
+}
+
+.item {
+    composes : list-group-item from "../styles/bootstrap.scss";
+}
+
+.item-name {
+    composes  : h6 from "../styles/bootstrap.scss";
+    font-size : 0.9rem;
+}
+
+.item-subname {
+    composes    : text-muted from "../styles/bootstrap.scss";
+    white-space : normal;
+    font-size   : 80%;
+}
+
+.btn {
+    text-align  : left;
+    font-size   : 1rem;
+    font-weight : 600;
+    .icon {
+        color        : gray;
+        margin-right : 0.5rem;
+    }
+}

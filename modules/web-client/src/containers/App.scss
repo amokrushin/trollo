@@ -1,0 +1,40 @@
+:global {
+    html, body {
+        width     : 100%;
+        height    : 100%;
+        font-size : 16px;
+    }
+
+    #app {
+        min-width  : 100%;
+        min-height : 100%;
+        height     : 100%;
+    }
+
+    body {
+        //@include media-breakpoint-down(sm) {
+        //    font-size : 14px;
+        //}
+    }
+}
+
+.container {
+    //composes       : container-fluid from "../styles/bootstrap.scss";
+    height         : 100%;
+    display        : flex;
+    flex-direction : column;
+}
+
+.header {
+    //composes  : row no-gutters from "../styles/bootstrap.scss";
+    flex-grow   : 0;
+    flex-shrink : 0;
+    display     : flex;
+}
+
+.body {
+    //composes  : row no-gutters from "../styles/bootstrap.scss";
+    flex-grow : 1;
+    display   : flex;
+    width     : 100%;
+}

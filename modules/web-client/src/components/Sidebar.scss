@@ -1,0 +1,39 @@
+.container {
+    background-color : #0278bf;
+    display          : flex;
+    flex-direction   : row;
+    overflow         : hidden;
+    position         : relative;
+    width            : 100%;
+
+    &--with-sidebar {
+        .main {
+            margin-right : 340px;
+            width        : 100%;
+            overflow-x   : auto;
+        }
+        .side {
+            transform : translateX(0);
+        }
+    }
+}
+
+.main {
+    margin-right : 0;
+    width        : 100%;
+    transition   : margin-right 200ms ease-in;
+    display      : flex;
+}
+
+.side {
+    position         : absolute;
+    width            : 340px;
+    background-color : gray;
+    transition       : transform 100ms ease-in;
+    top              : 0;
+    right            : 0;
+    left             : auto;
+    bottom           : 0;
+    transform        : translateX(340px);
+    color            : gray;
+}

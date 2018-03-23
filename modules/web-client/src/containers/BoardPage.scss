@@ -1,0 +1,33 @@
+$bg-color : #0278bf;
+
+.container {
+    //composes         : container-fluid from "../styles/bootstrap.scss";
+    //width            : 100%;
+    background-color : $bg-color;
+    display          : flex;
+    flex-direction   : column;
+    overflow-x       : auto;
+    width            : 100%;
+    position         : relative;
+    &.center {
+        align-items     : center;
+        justify-content : center;
+    }
+}
+
+.main {
+    //composes : row from "../styles/bootstrap.scss";
+    margin         : 8px;
+    display        : flex;
+    flex-direction : row;
+    overflow-x     : auto;
+    position       : absolute;
+    left           : 0;
+    top            : 44px;
+    right          : 0;
+    bottom         : 0;
+}
+
+:export {
+    loaderColor : white;
+}

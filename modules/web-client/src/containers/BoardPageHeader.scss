@@ -1,0 +1,27 @@
+$bg-color : #0278bf;
+
+.header {
+    background-color : lighten($bg-color, 5%);
+    padding          : 0.25rem;
+    overflow         : hidden;
+    flex-grow        : 0;
+    flex-shrink      : 0;
+    justify-content  : flex-start;
+    display          : flex;
+
+    button {
+        font-size : 1rem;
+    }
+
+    > .btn-board-name {
+        font-weight : 600;
+        color       : #f6f6f6;
+        font-size   : 1.125rem;
+        padding     : 0 0.5rem;
+    }
+
+    > .btn-menu {
+        justify-self : flex-end;
+        margin-left  : auto;
+    }
+}

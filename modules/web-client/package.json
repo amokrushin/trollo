@@ -1,0 +1,51 @@
+{
+  "name": "trollo-web-client",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "Anton Mokrushin <anton@mokr.org>",
+  "scripts": {
+    "wds": "webpack-dev-server --mode development"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.4",
+    "@fortawesome/fontawesome-free-regular": "^5.0.8",
+    "@fortawesome/fontawesome-free-solid": "^5.0.8",
+    "@fortawesome/react-fontawesome": "^0.0.17",
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "bootstrap": "^4.0.0",
+    "classnames": "^2.2.5",
+    "loaders.css": "^0.1.2",
+    "normalizr": "^3.2.4",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dnd": "^2.6.0",
+    "react-dnd-html5-backend": "^2.6.0",
+    "react-dnd-scrollzone": "^4.0.0",
+    "react-dom": "^16.2.0",
+    "react-hot-loader": "^4.0.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "reactstrap": "^5.0.0-beta.2",
+    "redux": "^3.7.2",
+    "redux-saga": "^0.16.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "lorem-ipsum": "^1.0.4",
+    "node-sass": "^4.7.2",
+    "react-beautiful-dnd": "^6.0.0",
+    "redux-devtools-extension": "^2.13.2",
+    "styled-components": "^3.2.3",
+    "uuid": "^3.2.1",
+    "wpkfg": "^1.0.0-alpha.13"
+  },
+  "peerDependencies": {
+    "popper.js": "*"
+  }
+}
